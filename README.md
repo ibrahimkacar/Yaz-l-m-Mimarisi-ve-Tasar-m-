@@ -1,2 +1,2 @@
-# Yaz-l-m-Mimarisi-ve-Tasar-m-
+# YAZILIM MİMARİSİ VE TASARIM
 Hayvan barınaklarındaki kayıt, sağlık takibi ve sahiplendirme süreçlerini dijitalleştiren web tabanlı yönetim platformu
