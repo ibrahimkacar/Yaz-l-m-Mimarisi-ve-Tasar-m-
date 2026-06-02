@@ -7,7 +7,7 @@ Bu belgede, yazılım kalitesini artırmak ve temiz kod (Clean Code) standartlar
 ## 🔍 Kod Gözden Geçirme 1: Kimlik Doğrulama Middleware Yapısı
 * **Tarih:** 2026-05-18  
 * **İncelenen Dosya:** `server/routes/auth.js` ([İlgili Kod Dosyası](file:///c:/Users/iboex/OneDrive/Masaüstü/projeler/MimarProje/server/routes/auth.js))  
-* **Gözden Geçiren:** Kıdemli Geliştirici  
+ 
 
 ### Bulgular & Öneriler:
 1. **Güvenlik Açığı:** JWT token doğrulamasında `process.env.JWT_SECRET` değerinin olmaması durumunda uygulamanın çökmesi veya güvensiz çalışması riski vardı.
@@ -24,7 +24,7 @@ Bu belgede, yazılım kalitesini artırmak ve temiz kod (Clean Code) standartlar
 ## 🔍 Kod Gözden Geçirme 2: Hayvan Detayları ve Sağlık Notları Sorgulaması
 * **Tarih:** 2026-05-25  
 * **İncelenen Dosya:** `server/routes/animals.js` ([İlgili Kod Dosyası](file:///c:/Users/iboex/OneDrive/Masaüstü\projeler\MimarProje\server\routes\animals.js))  
-* **Gözden Geçiren:** Yazılım Mimarı  
+
 
 ### Bulgular & Öneriler:
 1. **Veri Tutarlılığı:** Hayvan silindiğinde, o hayvana ait eski sağlık günlüklerinin (`health_logs`) veritabanında sahipsiz (orphan) kalması riski.
@@ -41,7 +41,7 @@ Bu belgede, yazılım kalitesini artırmak ve temiz kod (Clean Code) standartlar
 ## 🔍 Kod Gözden Geçirme 3: API Test Konsolu Güvenliği ve İstisna Yönetimi
 * **Tarih:** 2026-05-30  
 * **İncelenen Dosya:** `client/src/pages/ApiDocs.jsx` ([İlgili Kod Dosyası](file:///c:/Users/iboex/OneDrive/Masaüstü/projeler/MimarProje/client/src/pages/ApiDocs.jsx))  
-* **Gözden Geçiren:** Güvenlik Mühendisi  
+
 
 ### Bulgular & Öneriler:
 1. **İstisna Yönetimi:** `fetch` isteklerinde `response.ok` kontrolünün yapılmaması, hata durumunda JSON çıktısının boş dönmesine yol açıyordu.
